@@ -8,3 +8,22 @@ const products = [
     { name: "Sneakers", price: 300, category: "clothing" }
   ];
 
+  console.log(products)
+
+// task 1 
+const cheapProducts = products.filter(product => product.price <=200 )
+console.log(cheapProducts)
+
+// task 2
+const productName = products.map(product => product.name)
+console.log(productName)
+
+// task 3
+
+const electronicsName = products.filter(product => product.category === `electronics`).map(product => product.name);
+console.log(electronicsName)
+
+// Task 4
+
+const expensiveProducts = products.map(product => product.price > 1000);
+console.log(expensiveProducts)
