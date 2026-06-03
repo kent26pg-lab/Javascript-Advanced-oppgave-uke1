@@ -32,6 +32,6 @@ const expensiveProducts = products.map(product => product.price > 1000);
 console.log(expensiveProducts)
 
 // task 5 
-// Regner ut totalprisen på alle produktene i arrayet. 
+// Regner ut totalprisen på alle produktene i arrayet. acc husker summen og legger den sammen currentValue går til neste objekt og henter prisen fra der. ,0 er så at vi begynner fra 0
 const totalPrice =  products.reduce((acc, currentValue) => acc + currentValue.price,0);
 console.log(totalPrice)
